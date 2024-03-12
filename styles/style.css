@@ -89,12 +89,16 @@ ol {
   line-height: 21.6px;
 }
 
-.search-form__label {
+.search-form__label {             
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
-  width: fit-content; 
+  width: fit-content;
+}
+
+.search-form__label:has(.search-form__checkbox):hover {  
+  text-decoration: underline;       /*подчеркивание*/                             
 }
 
 .visually-hidden {                  /* Из задания */
@@ -245,8 +249,8 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link:hover {
-  text-decoration: underline;
+.content__card-link:hover {            
+  text-decoration: underline #FFF;   /*цвет подчеркивания*/
 }
 
 .content__card-link:focus {
